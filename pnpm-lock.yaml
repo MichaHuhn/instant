@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@instantdb/core':
-        specifier: ^0.18.9
-        version: 0.18.9
+        specifier: ^0.19.6
+        version: 0.19.6
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.8.3)
@@ -420,8 +420,8 @@ packages:
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
 
-  '@instantdb/core@0.18.9':
-    resolution: {integrity: sha512-jxBk0J+fomqcNBBEm62M8K+1qqUrEH7gouumZkEmm+W8C1PfRiHrfdmxSPwuQo2dbgkBOcuQ0rk/M+3xD9pGOw==}
+  '@instantdb/core@0.19.6':
+    resolution: {integrity: sha512-8W37OcO32KWyTjgTdK8TpOH2H+4GO+vJBwuwe7U8MSvxeu13J9dhx4CRk3bDnrCt37KBAEE9lm5fw8d4WxlBZA==}
 
   '@jridgewell/gen-mapping@0.3.8':
     resolution: {integrity: sha512-imAbBGkb+ebQyxKgzv5Hu2nmROxoDOXHh80evxdoXNOrvAnVx7zimzc1Oo5h9RlfV4vPXaE2iM5pOFbvOCClWA==}
@@ -2003,7 +2003,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.2': {}
 
-  '@instantdb/core@0.18.9':
+  '@instantdb/core@0.19.6':
     dependencies:
       mutative: 1.1.0
       uuid: 9.0.1

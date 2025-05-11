@@ -8,11 +8,6 @@ const rules = {
       $default: 'false'
     }
   },
-  items: {
-    allow: {
-      view: 'true'
-    }
-  },
   $default: {
     allow: {
       $default: 'false'

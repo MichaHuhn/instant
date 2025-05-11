@@ -1,28 +1,18 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { db, type Item } from '@/instant';
+import { db } from '@/instant';
 
-const items = ref<Item[]>([]);
+const room = db.joinRoom('name', 'id', { initialPresence: { example: 'value' } });
+const presenceResponse = ref();
 
-const queryDurationInMilliseconds = ref();
-const performanceStart = performance.now();
-
-db.subscribeQuery({ items: {} }, (response) => {
-  const performanceEnd = performance.now();
-  queryDurationInMilliseconds.value = Math.round(performanceEnd - performanceStart);
-
-  items.value = response.data?.items ?? [];
-});
+function joinRoom() {
+  room.subscribePresence({}, (response) => (presenceResponse.value = response));
+}
 </script>
 
 <template>
-  <div class="items">
-    <div class="item" v-for="item in items" :key="item.id">{{ item }}</div>
-  </div>
-
-  <br />
-
-  <div>{{ queryDurationInMilliseconds }} ms</div>
+  <button @click="joinRoom">room.subscribePresence()</button>
+  <pre>{{ presenceResponse }}</pre>
 </template>
 
 <style scoped></style>

@@ -20,7 +20,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@instantdb/core": "^0.18.9",
+    "@instantdb/core": "^0.19.6",
     "vue": "^3.5.13"
   },
   "devDependencies": {
